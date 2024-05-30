@@ -16,7 +16,7 @@ $(document).ready(function () {
             password: password,
             address: address,
             basket: [],
-            orders: [[]],
+            orders: [],
             votedFor: array
         }
         if (users == null) {
@@ -26,16 +26,17 @@ $(document).ready(function () {
             for (let i = 0; i < users.length; i++) {
                 if (users[i].email == email || users[i].username == username) {
                     if(users[i].email == email) {
-                        alert("Email već postoji!");
+                        alert(messageEmail);
                     }
                     else {
-                        alert("Username već postoji!");
+                        alert(messageUser);
                     }
                     return;
                 }
             }
             users.push(user)
         }
+        saveActive();
         localStorage.setItem("activeUser", JSON.stringify(user));
         localStorage.setItem("users", JSON.stringify(users));
         window.location.href = "../Pocetna/Pocetna.html"

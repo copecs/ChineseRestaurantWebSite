@@ -4,10 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/16330d7ae1.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="../Style/style.css">
+  <script src="LogInScriptSerbian.js"></script>
   <script src="LogInScript.js"></script>
   <script src="../Script/universalScript.js"></script>
   <title>Document</title>
@@ -47,6 +49,8 @@
                 <li><a href="../Ocene/Ocene.html">Ocene</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
+                <li><a href="../LogIn/LogIn.html"><img src="../../Slike/srb.jpg" alt="Serbian Flag" width="30" height="20"></a></li>
+                <li><a href="../LogIn/LogInEnglish.html"><img src="../../Slike/uk.jpg" alt="British Flag" width="30" height="20"></a></li>
                 <li><a href="../SignUp/SignUp.html"><span class="glyphicon glyphicon-user"></span>&ThinSpace; Sign up</a></li>
                 <li class="active"><a href="../LogIn/LogIn.html"><span class="glyphicon glyphicon-log-in"></span>&ThinSpace; Login</a></li>
               </ul>
@@ -90,8 +94,28 @@
     </div>
     <div class="row" name="footer">
       <div class="col-sm-12">
-        <footer class="text-center text-lg-start bg-body-tertiary text-muted">
-          <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        <!-- bootstrap 4 footer i awesome font ikonice uvezene preko cdn-->
+        <footer class="text-center bg-body-tertiary">
+          <div class="container pt-4">
+            <section class="mb-4">
+              <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1 white-bg" href="#!"
+                role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f green-icon"></i></a>
+
+              <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                data-mdb-ripple-color="dark"><i class="fab fa-twitter  green-icon"></i></a>
+
+              <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                data-mdb-ripple-color="dark"><i class="fab fa-google  green-icon"></i></a>
+
+              <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                data-mdb-ripple-color="dark"><i class="fab fa-instagram  green-icon"></i></a>
+
+
+            </section>
+          </div>
+
+
+          <div class="text-center p-3 green-icon" style="background-color: rgba(0, 0, 0, 0.05);">
             © 2024 Copyright: <span class="text-bold"> Voki i Peki </span>
           </div>
         </footer>

@@ -3,56 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/16330d7ae1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../../Style/style.css">
+    <script src="../../Script/universalFoodScriptSerbian.js"></script>
+    <script src="../../Script/universalFoodScript.js"></script>
+    <script src="DezertiScriptSerbian.js"></script>
     <script src="DezertiScript.js"></script>
     <script src="../../Script/universalScript.js"></script>
     <title>Document</title>
 </head>
 <body>
   <div class="container-fluid">
-    <div class="row" name="header">
-      <div class="col-sm-12">
-        <nav class="navbar navbar-inverse">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">
-                <img class="img-fluid" src="../../../Slike/ramenLogo.png" width="30" height="30" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-              <ul class="nav navbar-nav">
-                <li><a href="../../Pocetna/Pocetna.html">Pocetna</a></li>
-                <li><a href="../../Galerija/Galerija.html">Galerija</a></li>
-                <li class="dropdown active">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Jelovnik <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="../Predjela/Predjela.html">Predjela</a></li>
-                    <li><a href="../Glavna Jela/GlavnaJela.html">Glavna Jela</a></li>
-                    <li><a href="../Dezerti/Dezerti.html">Dezerti</a></li>
-                  </ul>
-                </li>
-                <li><a href="../../Moj Nalog/MojNalog.html">Moj Nalog</a></li>
-                <li><a href="../../O Nama/ONama.html">O Nama</a></li>
-                <li><a href="../../Tocak Srece/TocakSrece.html">Tocak Sreće</a></li>
-                <li><a href="../../Ocene/Ocene.html">Ocene</a></li>
+
+<div class="row" name="header">
+  <div class="col-sm-12">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img class="img-fluid" src="../../../Slike/ramenLogo.png" width="30" height="30" alt="Brand Logo">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="../../Pocetna/Pocetna.html">Pocetna</a></li>
+            <li><a href="../../Galerija/Galerija.html">Galerija</a></li>
+            <li class="dropdown active">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Jelovnik <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="../Predjela/Predjela.html">Predjela</a></li>
+                <li><a href="../Glavna Jela/GlavnaJela.html">Glavna Jela</a></li>
+                <li><a href="../Dezerti/Dezerti.html">Dezerti</a></li>
               </ul>
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="../../SignUp/SignUp.html"><span class="glyphicon glyphicon-user"></span>&ThinSpace; Sign up</a></li>
-                <li><a href="../../LogIn/LogIn.html"><span class="glyphicon glyphicon-log-in"></span>&ThinSpace; Login</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+            </li>
+            <li><a href="../../Moj Nalog/MojNalog.html">Moj Nalog</a></li>
+            <li><a href="../../O Nama/ONama.html">O Nama</a></li>
+            <li><a href="../../Tocak Srece/TocakSrece.html">Tocak Sreće</a></li>
+            <li><a href="../../Ocene/Ocene.html">Ocene</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../../Jelovnik/Dezerti/Dezerti.html"><img src="../../../Slike/srb.jpg" alt="Serbian Flag" width="30" height="20"></a></li>
+            <li><a href="../../Jelovnik/Dezerti/DezertiEnglish.html"><img src="../../../Slike/uk.jpg" alt="British Flag" width="30" height="20"></a></li>
+            <li><a href="../../SignUp/SignUp.html"><span class="glyphicon glyphicon-user"></span>&ThinSpace; Sign up</a></li>
+            <li><a href="../../LogIn/LogIn.html"><span class="glyphicon glyphicon-log-in"></span>&ThinSpace; Login</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav>
+  </div>
+</div>
+
+
     <div class="row" name="body">
       <div class="col-sm-12">
 
@@ -63,11 +72,27 @@
         </div>
 
         <div class="row">
+          <div class="col-sm-12">
+            <div class="border-for-food">
+              Sortiraj po:
+              Nazivu: <input class="form-check-input" type="radio" name="radioSort" id="radioNameSort">
+              Ceni: <input class="form-check-input" type="radio" name="radioSort" id="radioPriceSort">
+              <button id="sortButton" class="dark-text">Sortiraj</button>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+
+        <div id="dishes">
+
+        <div class="row">
           <div class="col-sm-12 center-items">
             <div class="border-for-food">
               <h2 class="food-header text-center text-bold">Knedle sa voćem</h2>
               <p class="text-justified">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis purus sit amet volutpat consequat mauris nunc congue. Adipiscing diam donec adipiscing tristique risus nec feugiat in. Viverra nam libero justo laoreet sit. Ut venenatis tellus in metus vulputate eu scelerisque felis. Est ante in nibh mauris cursus mattis molestie a iaculis. Nisi lacus sed viverra tellus in hac habitasse platea. Blandit massa enim nec dui nunc mattis. Eu consequat ac felis donec et odio pellentesque diam. Odio facilisis mauris sit amet massa vitae. Penatibus et magnis dis parturient montes nascetur. Consequat semper viverra nam libero justo. Egestas pretium aenean pharetra magna ac placerat. Viverra vitae congue eu consequat ac. Ultrices tincidunt arcu non sodales. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Et leo duis ut diam quam nulla. Ut diam quam nulla porttitor massa id neque aliquam. Egestas congue quisque egestas diam. At varius vel pharetra vel turpis.
+                Knedle sa voćem su tradicionalno jelo koje se sastoji od mekanih knedli punjenih raznovrsnim voćem poput šljiva, jagoda ili višanja. Ove sočne knedle se posipaju šećerom i poslužuju tople, praveći savršenu kombinaciju slatkog voća i mekanog testa. Ovo jelo je omiljen izbor za desert ili lagani obrok tokom toplih letnjih dana.
+                Cena velike porcije: 400 din, cena male porcije: 200 din
               </p>
               <img class="img-fluid img-thumbnail food-picture" src="../../../Slike/Dezert1-KnedleSaVocem.jpg" alt="">
               <br>
@@ -80,6 +105,10 @@
                   <button id="submitGrade1" class="dark-text">Oceni</button>
                 </div>
                 <div class="col-sm-6">
+                  Mala porcija: <input class="form-check-input" type="radio" name="flexRadioDefault"
+                  id="radioLittlePortion1">
+                Velika porcija: <input class="form-check-input" type="radio" name="flexRadioDefault"
+                  id="radioBigPortion1">
                   <input id="number1" type="number" step="1" max="10" value="1" name="quantity" class="quantity-field border-0 text-center w-25 dark-text">
                   <button id="addToBag1">
                     <img class="img-fluid img-thumbnail" src="../../../Slike/shopping-cart.jpg" width="30" height="30" alt="">
@@ -98,7 +127,8 @@
             <div class="border-for-food">
               <h2 class="food-header text-center text-bold">Slatko ljuta piletina</h2>
               <p class="text-justified">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis purus sit amet volutpat consequat mauris nunc congue. Adipiscing diam donec adipiscing tristique risus nec feugiat in. Viverra nam libero justo laoreet sit. Ut venenatis tellus in metus vulputate eu scelerisque felis. Est ante in nibh mauris cursus mattis molestie a iaculis. Nisi lacus sed viverra tellus in hac habitasse platea. Blandit massa enim nec dui nunc mattis. Eu consequat ac felis donec et odio pellentesque diam. Odio facilisis mauris sit amet massa vitae. Penatibus et magnis dis parturient montes nascetur. Consequat semper viverra nam libero justo. Egestas pretium aenean pharetra magna ac placerat. Viverra vitae congue eu consequat ac. Ultrices tincidunt arcu non sodales. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Et leo duis ut diam quam nulla. Ut diam quam nulla porttitor massa id neque aliquam. Egestas congue quisque egestas diam. At varius vel pharetra vel turpis.
+                Slatko ljuta piletina je ukusno jelo koje kombinuje slatke i pikantne arome na savršen način. Komadići sočnog pilećeg mesa se karamelizuju u slatkom i ljutom umaku, obogaćeni aromatičnim začinima poput đumbira, belog luka i crvene paprike. Ova jela se često poslužuje uz pirinač ili kriške svježe povrće, pružajući bogat i uravnotežen obrok.
+                Cena velike porcije: 600 din, cena male porcije: 400 din
               </p>
               <img class="img-fluid img-thumbnail food-picture" src="../../../Slike/Dezert2-SlatkoLjutaPiletina.jpg"alt="">
               <br>
@@ -111,6 +141,10 @@
                   <button id="submitGrade2" class="dark-text">Oceni</button>
                 </div>
                 <div class="col-sm-6">
+                  Mala porcija: <input class="form-check-input" type="radio" name="flexRadioDefault"
+                  id="radioLittlePortion2">
+                Velika porcija: <input class="form-check-input" type="radio" name="flexRadioDefault"
+                  id="radioBigPortion2">
                   <input id="number2" type="number" step="1" max="10" value="1" name="quantity" class="quantity-field border-0 text-center w-25 dark-text">
                   <button id="addToBag2">
                     <img class="img-fluid img-thumbnail" src="../../../Slike/shopping-cart.jpg" width="30" height="30" alt="">
@@ -129,9 +163,10 @@
             <div class="border-for-food">
               <h2 class="food-header text-center text-bold">Mesečev kolač</h2>
               <p class="text-justified">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis purus sit amet volutpat consequat mauris nunc congue. Adipiscing diam donec adipiscing tristique risus nec feugiat in. Viverra nam libero justo laoreet sit. Ut venenatis tellus in metus vulputate eu scelerisque felis. Est ante in nibh mauris cursus mattis molestie a iaculis. Nisi lacus sed viverra tellus in hac habitasse platea. Blandit massa enim nec dui nunc mattis. Eu consequat ac felis donec et odio pellentesque diam. Odio facilisis mauris sit amet massa vitae. Penatibus et magnis dis parturient montes nascetur. Consequat semper viverra nam libero justo. Egestas pretium aenean pharetra magna ac placerat. Viverra vitae congue eu consequat ac. Ultrices tincidunt arcu non sodales. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Et leo duis ut diam quam nulla. Ut diam quam nulla porttitor massa id neque aliquam. Egestas congue quisque egestas diam. At varius vel pharetra vel turpis.
+                Mesečev kolač je fantastična poslastica koja će očarati vaše nepce. Ovaj kolač se sastoji od nežnog sloja biskvita prelivenog kremastom čokoladnom glazurom, ukrašenog mesečevim oblicima od šećera. Svaki zalogaj ovog kolača pruža neodoljivu kombinaciju čokolade i vanile, čineći ga savršenim izborom za sve ljubitelje slatkiša.
+                Cena velike porcije: 200 din, cena male porcije: 100 din
               </p>
-              <img class="img-fluid img-thumbnail food-picture" src="../../../Slike/GlavnoJelo3-KineskaSalata.jpg"alt="">
+              <img class="img-fluid img-thumbnail food-picture" src="../../../Slike/Dezert3-MesecevKolac.jpg"alt="">
               <br>
               <br>
               <div class="row">
@@ -142,6 +177,10 @@
                   <button id="submitGrade3" class="dark-text">Oceni</button>
                 </div>
                 <div class="col-sm-6">
+                  Mala porcija: <input class="form-check-input" type="radio" name="flexRadioDefault"
+                  id="radioLittlePortion3">
+                Velika porcija: <input class="form-check-input" type="radio" name="flexRadioDefault"
+                  id="radioBigPortion3">
                   <input id="number3" type="number" step="1" max="10" value="1" name="quantity" class="quantity-field border-0 text-center w-25 dark-text">
                   <button id="addToBag3">
                     <img class="img-fluid img-thumbnail" src="../../../Slike/shopping-cart.jpg" width="30" height="30" alt="">
@@ -155,12 +194,34 @@
         <br>
         <br>
 
+        </div>
+
       </div>
     </div>
     <div class="row" name="footer">
       <div class="col-sm-12">
-        <footer class="text-center text-lg-start bg-body-tertiary text-muted">
-          <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        <!-- bootstrap 4 footer i awesome font ikonice uvezene preko cdn-->
+        <footer class="text-center bg-body-tertiary">
+          <div class="container pt-4">
+            <section class="mb-4">
+              <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1 white-bg" href="#!"
+                role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f green-icon"></i></a>
+
+              <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                data-mdb-ripple-color="dark"><i class="fab fa-twitter  green-icon"></i></a>
+
+              <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                data-mdb-ripple-color="dark"><i class="fab fa-google  green-icon"></i></a>
+
+              <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                data-mdb-ripple-color="dark"><i class="fab fa-instagram  green-icon"></i></a>
+
+
+            </section>
+          </div>
+
+
+          <div class="text-center p-3 green-icon" style="background-color: rgba(0, 0, 0, 0.05);">
             © 2024 Copyright: <span class="text-bold"> Voki i Peki </span>
           </div>
         </footer>

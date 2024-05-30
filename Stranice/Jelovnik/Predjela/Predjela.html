@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../../Style/style.css">
-    <script src="PredjelaScript.js"></script>
-    <script src="../../Script/universalScript.js"></script>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/16330d7ae1.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../../Style/style.css">
+  <script src="../../Script/universalFoodScriptSerbian.js"></script>
+  <script src="../../Script/universalFoodScript.js"></script>
+  <script src="PredjelaScriptSerbian.js"></script>
+  <script src="PredjelaScript.js"></script>
+  <script src="../../Script/universalScript.js"></script>
+  <title>Document</title>
 </head>
+
 <body>
   <div class="container-fluid">
     <div class="row" name="header">
@@ -45,8 +51,14 @@
                 <li><a href="../../Ocene/Ocene.html">Ocene</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="../../SignUp/SignUp.html"><span class="glyphicon glyphicon-user"></span>&ThinSpace; Sign up</a></li>
-                <li><a href="../../LogIn/LogIn.html"><span class="glyphicon glyphicon-log-in"></span>&ThinSpace; Login</a></li>
+                <li><a href="../../Jelovnik/Predjela/Predjela.html"><img src="../../../Slike/srb.jpg" alt="Serbian Flag"
+                      width="30" height="20"></a></li>
+                <li><a href="../../Jelovnik/Predjela/PredjelaEnglish.html"><img src="../../../Slike/uk.jpg"
+                      alt="British Flag" width="30" height="20"></a></li>
+                <li><a href="../../SignUp/SignUp.html"><span class="glyphicon glyphicon-user"></span>&ThinSpace; Sign
+                    up</a></li>
+                <li><a href="../../LogIn/LogIn.html"><span class="glyphicon glyphicon-log-in"></span>&ThinSpace;
+                    Login</a></li>
               </ul>
             </div>
           </div>
@@ -63,104 +75,160 @@
         </div>
 
         <div class="row">
-          <div class="col-sm-12 center-items">
+          <div class="col-sm-12">
             <div class="border-for-food">
-              <h2 class="food-header text-center text-bold">Kung Pao pikant gambori</h2>
-              <p class="text-justified">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis purus sit amet volutpat consequat mauris nunc congue. Adipiscing diam donec adipiscing tristique risus nec feugiat in. Viverra nam libero justo laoreet sit. Ut venenatis tellus in metus vulputate eu scelerisque felis. Est ante in nibh mauris cursus mattis molestie a iaculis. Nisi lacus sed viverra tellus in hac habitasse platea. Blandit massa enim nec dui nunc mattis. Eu consequat ac felis donec et odio pellentesque diam. Odio facilisis mauris sit amet massa vitae. Penatibus et magnis dis parturient montes nascetur. Consequat semper viverra nam libero justo. Egestas pretium aenean pharetra magna ac placerat. Viverra vitae congue eu consequat ac. Ultrices tincidunt arcu non sodales. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Et leo duis ut diam quam nulla. Ut diam quam nulla porttitor massa id neque aliquam. Egestas congue quisque egestas diam. At varius vel pharetra vel turpis.
-              </p>
-              <img class="img-fluid img-thumbnail food-picture" src="../../../Slike/Predjelo1-KungPaoPikantKozice.jpg"alt="">
-              <br>
-              <br>
-              <div class="row">
-                <div class="col-sm-3">
-                  <input type="range" class=" range-food" id="grade1" min="0" max="4">
-                </div>
-                <div class="col-sm-3">
-                  <button id="submitGrade1" class="dark-text">Oceni</button>
-                </div>
-                <div class="col-sm-6">
-                  <input id="number1" type="number" step="1" max="10" value="1" name="quantity" class="quantity-field border-0 text-center w-25 dark-text">
-                  <button id="addToBag1">
-                    <img class="img-fluid img-thumbnail" src="../../../Slike/shopping-cart.jpg" width="30" height="30" alt="">
-                  </button>
+              Sortiraj po:
+              Nazivu: <input class="form-check-input" type="radio" name="radioSort" id="radioNameSort">
+              Ceni: <input class="form-check-input" type="radio" name="radioSort" id="radioPriceSort">
+              <button id="sortButton" class="dark-text">Sortiraj</button>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+
+        <div id="dishes">
+          <div class="row">
+            <div class="col-sm-12 center-items">
+              <div class="border-for-food">
+                <h2 class="food-header text-center text-bold">Kung Pao pikant gambori</h2>
+                <p class="text-justified">
+                  Kung Pao pikant gambori su ukusno jelo koje spaja sočne kozice sa hrskavim kikirikijem i šarenim povrćem, začinjeno čili papričicama. Ovo jelo je puno ukusa i tekstura, a priprema se u aromatičnom sosu koji dodatno obogaćuje njegov ukus. Uz dodatak sojinog umaka i mirisnog belog luka, ovo jelo će vas oduševiti svojom kombinacijom slatkog, pikantnog i slanog ukusa. Kung Pao pikant gambori su savršen izbor za ljubitelje azijske kuhinje koji žele da probaju nešto novo i uzbudljivo.
+                  Cena velike porcije: 700 din, cena male porcije: 500 din
+                </p>
+                <img class="img-fluid img-thumbnail food-picture" src="../../../Slike/Predjelo1-KungPaoPikantKozice.jpg"
+                  alt="">
+                <br>
+                <br>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <input type="range" class=" range-food" id="grade1" min="0" max="4">
+                  </div>
+                  <div class="col-sm-3">
+                    <button id="submitGrade1" class="dark-text">Oceni</button>
+                  </div>
+                  <div class="col-sm-6">
+                    Mala porcija: <input class="form-check-input" type="radio" name="flexRadioDefault"
+                      id="radioLittlePortion1">
+                    Velika porcija: <input class="form-check-input" type="radio" name="flexRadioDefault"
+                      id="radioBigPortion1">
+                    <input id="number1" type="number" step="1" max="10" value="1" name="quantity"
+                      class="quantity-field border-0 text-center w-25 dark-text">
+                    <button id="addToBag1">
+                      <img class="img-fluid img-thumbnail" src="../../../Slike/shopping-cart.jpg" width="30" height="30"
+                        alt="">
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+          <br>
+          <br>
 
-        <br>
-        <br>
-
-        <div class="row">
-          <div class="col-sm-12 center-items">
-            <div class="border-for-food">
-              <h2 class="food-header text-center text-bold">Piletina u pikant umaku od meda</h2>
-              <p class="text-justified">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis purus sit amet volutpat consequat mauris nunc congue. Adipiscing diam donec adipiscing tristique risus nec feugiat in. Viverra nam libero justo laoreet sit. Ut venenatis tellus in metus vulputate eu scelerisque felis. Est ante in nibh mauris cursus mattis molestie a iaculis. Nisi lacus sed viverra tellus in hac habitasse platea. Blandit massa enim nec dui nunc mattis. Eu consequat ac felis donec et odio pellentesque diam. Odio facilisis mauris sit amet massa vitae. Penatibus et magnis dis parturient montes nascetur. Consequat semper viverra nam libero justo. Egestas pretium aenean pharetra magna ac placerat. Viverra vitae congue eu consequat ac. Ultrices tincidunt arcu non sodales. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Et leo duis ut diam quam nulla. Ut diam quam nulla porttitor massa id neque aliquam. Egestas congue quisque egestas diam. At varius vel pharetra vel turpis.
-              </p>
-              <img class="img-fluid img-thumbnail food-picture" src="../../../Slike/Predjelo2-PiletinaUPikantUmakuOdMeda.jpg"alt="">
-              <br>
-              <br>
-              <div class="row">
-                <div class="col-sm-3">
-                  <input type="range" class=" range-food" id="grade2" min="0" max="4">
-                </div>
-                <div class="col-sm-3">
-                  <button id="submitGrade2" class="dark-text">Oceni</button>
-                </div>
-                <div class="col-sm-6">
-                  <input id="number2" type="number" step="1" max="10" value="1" name="quantity" class="quantity-field border-0 text-center w-25 dark-text">
-                  <button id="addToBag2">
-                    <img class="img-fluid img-thumbnail" src="../../../Slike/shopping-cart.jpg" width="30" height="30" alt="">
-                  </button>
+          <div class="row">
+            <div class="col-sm-12 center-items">
+              <div class="border-for-food">
+                <h2 class="food-header text-center text-bold">Piletina u pikant umaku od meda</h2>
+                <p class="text-justified">
+                  Piletina u pikant umaku od meda je ukusno jelo koje spaja sočne komade piletine sa slatkim i pikantnim medom. Ovo jelo je savršena kombinacija slatkoće i začina, pripremljena da zadovolji vaše čulo ukusa. Marinirana piletina se peče do savršene hrskavosti, a zatim se preliva pikantnim umakom od meda koji dodaje bogatstvo ukusa. Servirana sa prilogom po želji, ova piletina će zadovoljiti i najprobirljivije goste svojim izrazito ukusnim i mirisnim zalogajima.
+                  Cena velike porcije: 900 din, cena male porcije: 600 din
+                </p>
+                <img class="img-fluid img-thumbnail food-picture"
+                  src="../../../Slike/Predjelo2-PiletinaUPikantUmakuOdMeda.jpg" alt="">
+                <br>
+                <br>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <input type="range" class=" range-food" id="grade2" min="0" max="4">
+                  </div>
+                  <div class="col-sm-3">
+                    <button id="submitGrade2" class="dark-text">Oceni</button>
+                  </div>
+                  <div class="col-sm-6">
+                    Mala porcija: <input class="form-check-input" type="radio" name="flexRadioDefault"
+                      id="radioLittlePortion2">
+                    Velika porcija: <input class="form-check-input" type="radio" name="flexRadioDefault"
+                      id="radioBigPortion2">
+                    <input id="number2" type="number" step="1" max="10" value="1" name="quantity"
+                      class="quantity-field border-0 text-center w-25 dark-text">
+                    <button id="addToBag2">
+                      <img class="img-fluid img-thumbnail" src="../../../Slike/shopping-cart.jpg" width="30" height="30"
+                        alt="">
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+          <br>
+          <br>
 
-        <br>
-        <br>
-
-        <div class="row">
-          <div class="col-sm-12 center-items">
-            <div class="border-for-food">
-              <h2 class="food-header text-center text-bold">Mesne rolnice u Umagi sosu</h2>
-              <p class="text-justified">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis purus sit amet volutpat consequat mauris nunc congue. Adipiscing diam donec adipiscing tristique risus nec feugiat in. Viverra nam libero justo laoreet sit. Ut venenatis tellus in metus vulputate eu scelerisque felis. Est ante in nibh mauris cursus mattis molestie a iaculis. Nisi lacus sed viverra tellus in hac habitasse platea. Blandit massa enim nec dui nunc mattis. Eu consequat ac felis donec et odio pellentesque diam. Odio facilisis mauris sit amet massa vitae. Penatibus et magnis dis parturient montes nascetur. Consequat semper viverra nam libero justo. Egestas pretium aenean pharetra magna ac placerat. Viverra vitae congue eu consequat ac. Ultrices tincidunt arcu non sodales. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Et leo duis ut diam quam nulla. Ut diam quam nulla porttitor massa id neque aliquam. Egestas congue quisque egestas diam. At varius vel pharetra vel turpis.
-              </p>
-              <img class="img-fluid img-thumbnail food-picture" src="../../../Slike/Predjelo3-MesneRolniceSaUnagiUmakom.jpg"alt="">
-              <br>
-              <br>
-              <div class="row">
-                <div class="col-sm-3">
-                  <input type="range" class=" range-food" id="grade3" min="0" max="4">
-                </div>
-                <div class="col-sm-3">
-                  <button id="submitGrade3" class="dark-text">Oceni</button>
-                </div>
-                <div class="col-sm-6">
-                  <input id="number3" type="number" step="1" max="10" value="1" name="quantity" class="quantity-field border-0 text-center w-25 dark-text">
-                  <button id="addToBag3">
-                    <img class="img-fluid img-thumbnail" src="../../../Slike/shopping-cart.jpg" width="30" height="30" alt="">
-                  </button>
+          <div class="row">
+            <div class="col-sm-12 center-items">
+              <div class="border-for-food">
+                <h2 class="food-header text-center text-bold">Mesne rolnice u Umagi sosu</h2>
+                <p class="text-justified">
+                  Mesne rolnice u Umagi sosu su ukusno jelo koje spaja sočne rolnice mesa sa bogatim i aromatičnim umagi sosom. Ovo jelo je puno ukusa i priprema se sa pažnjom kako bi svaki zalogaj bio savršen. Meso je pažljivo odabrano i oblikovano u rolnice, a zatim kuvano u ukusnom Umagi sosu koji mu dodaje dubok i složen ukus. Servirane sa prilogom po izboru, ove mesne rolnice će oduševiti vaše čulo ukusa i ostaviti vas željnim još.
+                  Cena velike porcije: 1200 din, cena male porcije: 900 din
+                </p>
+                <img class="img-fluid img-thumbnail food-picture"
+                  src="../../../Slike/Predjelo3-MesneRolniceSaUnagiUmakom.jpg" alt="">
+                <br>
+                <br>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <input type="range" class=" range-food" id="grade3" min="0" max="4">
+                  </div>
+                  <div class="col-sm-3">
+                    <button id="submitGrade3" class="dark-text">Oceni</button>
+                  </div>
+                  <div class="col-sm-6">
+                    Mala porcija: <input class="form-check-input" type="radio" name="flexRadioDefault"
+                      id="radioLittlePortion3">
+                    Velika porcija: <input class="form-check-input" type="radio" name="flexRadioDefault"
+                      id="radioBigPortion3">
+                    <input id="number3" type="number" step="1" max="10" value="1" name="quantity"
+                      class="quantity-field border-0 text-center w-25 dark-text">
+                    <button id="addToBag3">
+                      <img class="img-fluid img-thumbnail" src="../../../Slike/shopping-cart.jpg" width="30" height="30"
+                        alt="">
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <br>
+          <br>
         </div>
-
-        <br>
-        <br>
 
       </div>
     </div>
     <div class="row" name="footer">
       <div class="col-sm-12">
-        <footer class="text-center text-lg-start bg-body-tertiary text-muted">
-          <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        <!-- bootstrap 4 footer i awesome font ikonice uvezene preko cdn-->
+        <footer class="text-center bg-body-tertiary">
+          <div class="container pt-4">
+            <section class="mb-4">
+              <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1 white-bg" href="#!"
+                role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f green-icon"></i></a>
+
+              <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                data-mdb-ripple-color="dark"><i class="fab fa-twitter  green-icon"></i></a>
+
+              <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                data-mdb-ripple-color="dark"><i class="fab fa-google  green-icon"></i></a>
+
+              <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                data-mdb-ripple-color="dark"><i class="fab fa-instagram  green-icon"></i></a>
+
+
+            </section>
+          </div>
+
+
+          <div class="text-center p-3 green-icon" style="background-color: rgba(0, 0, 0, 0.05);">
             © 2024 Copyright: <span class="text-bold"> Voki i Peki </span>
           </div>
         </footer>
@@ -168,4 +236,5 @@
     </div>
   </div>
 </body>
+
 </html>

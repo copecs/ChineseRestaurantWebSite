@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/16330d7ae1.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../../Style/style.css">
+  <script src="../../Script/universalFoodScriptEnglish.js"></script>
+  <script src="../../Script/universalFoodScript.js"></script>
+  <script src="PredjelaScriptEnglish.js"></script>
+  <script src="PredjelaScript.js"></script>
+  <script src="../../Script/universalScript.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row" name="header">
+      <div class="col-sm-12">
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img class="img-fluid" src="../../../Slike/ramenLogo.png" width="30" height="30" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li><a href="../../Pocetna/PocetnaEnglish.html">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle " data-toggle="dropdown" href="#">Galerie <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="../../Galerija/GalerijaEnglish.html">Photos</a></li>
+                      <li><a href="../../Galerija/GalerijaVideoEnglish.html">Videos</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown active">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="../Predjela/PredjelaEnglish.html">Starters</a></li>
+                    <li><a href="../Glavna Jela/GlavnaJelaEnglish.html">Main dishes</a></li>
+                    <li><a href="../Dezerti/DezertiEnglish.html">Deserts</a></li>
+                  </ul>
+                </li>
+                <li><a href="../../Moj Nalog/MojNalogEnglish.html">My Profile</a></li>
+                <li><a href="../../O Nama/ONamaEnglish.html">About Us</a></li>
+                <li><a href="../../Tocak Srece/TocakSreceEnglish.html">Wheel of luck</a></li>
+                <li><a href="../../Ocene/OceneEnglish.html">Reviews</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="../../Jelovnik/Predjela/Predjela.html"><img src="../../../Slike/srb.jpg" alt="Serbian Flag"
+                      width="30" height="20"></a></li>
+                <li><a href="../../Jelovnik/Predjela/PredjelaEnglish.html"><img src="../../../Slike/uk.jpg"
+                      alt="British Flag" width="30" height="20"></a></li>
+                <li><a href="../../SignUp/SignUpEnglish.html"><span class="glyphicon glyphicon-user"></span>&ThinSpace; Sign
+                    up</a></li>
+                <li><a href="../../LogIn/LogInEnglish.html"><span class="glyphicon glyphicon-log-in"></span>&ThinSpace;
+                    Login</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="row" name="body">
+      <div class="col-sm-12">
+
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 class="text-center text-bold">Starters</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="border-for-food">
+              Sort by:
+              Name: <input class="form-check-input" type="radio" name="radioSort" id="radioNameSort">
+              Price: <input class="form-check-input" type="radio" name="radioSort" id="radioPriceSort">
+              <button id="sortButton" class="dark-text">Sort</button>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+
+        <div id="dishes">
+          <div class="row">
+            <div class="col-sm-12 center-items">
+              <div class="border-for-food">
+                <h2 class="food-header text-center text-bold">Kung Pao Spicy Shrimp</h2>
+                <p class="text-justified">
+                  Kung Pao Spicy Shrimp is a delicious dish that combines juicy shrimp with crispy peanuts and colorful vegetables, seasoned with chili peppers. This dish is full of flavor and textures, prepared in an aromatic sauce that further enriches its taste. With the addition of soy sauce and fragrant garlic, this dish will delight you with its combination of sweet, spicy, and salty flavors. Kung Pao Spicy Shrimp is the perfect choice for Asian cuisine enthusiasts who want to try something new and exciting.
+                  Price for large portion: 700 din, price for small portion: 500 din
+                </p>
+                <img class="img-fluid img-thumbnail food-picture" src="../../../Slike/Predjelo1-KungPaoPikantKozice.jpg"
+                  alt="">
+                <br>
+                <br>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <input type="range" class=" range-food" id="grade1" min="0" max="4">
+                  </div>
+                  <div class="col-sm-3">
+                    <button id="submitGrade1" class="dark-text">Rate</button>
+                  </div>
+                  <div class="col-sm-6">
+                    Small portion: <input class="form-check-input" type="radio" name="flexRadioDefault"
+                      id="radioLittlePortion1">
+                    Large portion: <input class="form-check-input" type="radio" name="flexRadioDefault"
+                      id="radioBigPortion1">
+                    <input id="number1" type="number" step="1" max="10" value="1" name="quantity"
+                      class="quantity-field border-0 text-center w-25 dark-text">
+                    <button id="addToBag1">
+                      <img class="img-fluid img-thumbnail" src="../../../Slike/shopping-cart.jpg" width="30" height="30"
+                      alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="row">
+          <div class="col-sm-12 center-items">
+            <div class="border-for-food">
+              <h2 class="food-header text-center text-bold">Chicken in Spicy Honey Sauce</h2>
+              <p class="text-justified">
+                Chicken in Spicy Honey Sauce is a delicious dish that combines juicy chicken pieces with sweet and spicy honey. This dish is the perfect combination of sweetness and spices, prepared to satisfy your taste buds. Marinated chicken is roasted to perfection, then drizzled with spicy honey sauce that adds richness of flavor. Served with a side dish of your choice, this chicken will satisfy even the most discerning guests with its extremely delicious and aromatic bites.
+                Price for large portion: 900 din, price for small portion: 600 din
+              </p>
+              <img class="img-fluid img-thumbnail food-picture"
+              src="../../../Slike/Predjelo2-PiletinaUPikantUmakuOdMeda.jpg" alt="">
+              <br>
+              <br>
+              <div class="row">
+                <div class="col-sm-3">
+                  <input type="range" class=" range-food" id="grade2" min="0" max="4">
+                </div>
+                <div class="col-sm-3">
+                  <button id="submitGrade2" class="dark-text">Rate</button>
+                </div>
+                <div class="col-sm-6">
+                  Small portion: <input class="form-check-input" type="radio" name="flexRadioDefault"
+                    id="radioLittlePortion2">
+                  Large portion: <input class="form-check-input" type="radio" name="flexRadioDefault"
+                    id="radioBigPortion2">
+                  <input id="number2" type="number" step="1" max="10" value="1" name="quantity"
+                    class="quantity-field border-0 text-center w-25 dark-text">
+                  <button id="addToBag2">
+                    <img class="img-fluid img-thumbnail" src="../../../Slike/shopping-cart.jpg" width="30" height="30"
+                      alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="row">
+          <div class="col-sm-12 center-items">
+            <div class="border-for-food">
+              <h2 class="food-header text-center text-bold">Meat Rolls in Unagi Sauce</h2>
+              <p class="text-justified">
+                Meat Rolls in Unagi Sauce is a delicious dish that combines juicy meat rolls with rich and aromatic unagi sauce. This dish is full of flavor and is prepared with care to make every bite perfect. The meat is carefully selected and shaped into rolls, then cooked in a tasty unagi sauce that adds a deep and complex flavor. Served with a side dish of your choice, these meat rolls will delight your taste buds and leave you craving for more.
+                Price for large portion: 1200 din, price for small portion: 900 din
+              </p>
+              <img class="img-fluid img-thumbnail food-picture"
+              src="../../../Slike/Predjelo3-MesneRolniceSaUnagiUmakom.jpg" alt="">
+              <br>
+              <br>
+              <div class="row">
+                <div class="col-sm-3">
+                  <input type="range" class=" range-food" id="grade3" min="0" max="4">
+                </div>
+                <div class="col-sm-3">
+                  <button id="submitGrade3" class="dark-text">Rate</button>
+                </div>
+                <div class="col-sm-6">
+                  Small portion: <input class="form-check-input" type="radio" name="flexRadioDefault"
+                    id="radioLittlePortion3">
+                  Large portion: <input class="form-check-input" type="radio" name="flexRadioDefault"
+                    id="radioBigPortion3">
+                  <input id="number3" type="number" step="1" max="10" value="1" name="quantity"
+                    class="quantity-field border-0 text-center w-25 dark-text">
+                  <button id="addToBag3">
+                    <img class="img-fluid img-thumbnail" src="../../../Slike/shopping-cart.jpg" width="30" height="30"
+                      alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+      </div>
+
+    </div>
+  </div>
+  <div class="row" name="footer">
+    <div class="col-sm-12">
+      <!-- bootstrap 4 footer i awesome font ikonice uvezene preko cdn-->
+      <footer class="text-center bg-body-tertiary">
+        <div class="container pt-4">
+          <section class="mb-4">
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1 white-bg" href="#!"
+              role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f green-icon"></i></a>
+
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-twitter  green-icon"></i></a>
+
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-google  green-icon"></i></a>
+
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-instagram  green-icon"></i></a>
+
+
+          </section>
+        </div>
+
+
+        <div class="text-center p-3 green-icon" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2024 Copyright: <span class="text-bold"> Voki i Peki </span>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

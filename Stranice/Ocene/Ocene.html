@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/16330d7ae1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -45,6 +46,8 @@
                 <li class="active"><a href="../Ocene/Ocene.html">Ocene</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
+                <li><a href="../Ocene/Ocene.html"><img src="../../Slike/srb.jpg" alt="Serbian Flag" width="30" height="20"></a></li>
+                <li><a href="../Ocene/OceneEnglish.html"><img src="../../Slike/uk.jpg" alt="British Flag" width="30" height="20"></a></li>
                 <li><a href="../SignUp/SignUp.html"><span class="glyphicon glyphicon-user"></span>&ThinSpace; Sign up</a></li>
                 <li><a href="../LogIn/LogIn.html"><span class="glyphicon glyphicon-log-in"></span>&ThinSpace; Login</a></li>
               </ul>
@@ -55,13 +58,58 @@
     </div>
     <div class="row" name="body">
       <div class="col-sm-12">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 class="text-center text-bold">Ocene</h1>
+          </div>
+        </div>
+        <br>
 
+        <div class="row">
+          <div class="col-sm-12 center-items">
+            <div class="border-for-food">
+
+                <p> Kung Pao pikant gambori: <span id="Predjelo1"></span></p>
+                <p> Piletina u pikant umaku od meda: <span id="Predjelo2"></span></p>
+                <p> Mesne rolnice sa Unagi umakom: <span id="Predjelo3"></span></p>
+                <p> Kiselo ljudta piletina: <span id="GlavnoJelo1"></span></p>
+                <p> Tradicionalne nudle sa povrćem: <span id="GlavnoJelo2"></span></p>
+                <p> Kineska salata: <span id="GlavnoJelo3"></span></p>
+                <p> Knedle sa voćem: <span id="Dezert1"></span></p>
+                <p> Slatko ljuta piletina: <span id="Dezert2"></span></p>
+                <p> Mesečev kolač: <span id="Dezert3"></span></p>
+
+            </div>
+          </div>
+        </div>        
+        <br>
       </div>
     </div>
+
     <div class="row" name="footer">
       <div class="col-sm-12">
-        <footer class="text-center text-lg-start bg-body-tertiary text-muted">
-          <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        <!-- bootstrap 4 footer i awesome font ikonice uvezene preko cdn-->
+        <footer class="text-center bg-body-tertiary">
+          <div class="container pt-4">
+            <section class="mb-4">
+              <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1 white-bg" href="#!"
+                role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f green-icon"></i></a>
+
+              <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                data-mdb-ripple-color="dark"><i class="fab fa-twitter  green-icon"></i></a>
+
+              <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                data-mdb-ripple-color="dark"><i class="fab fa-google  green-icon"></i></a>
+
+              <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                data-mdb-ripple-color="dark"><i class="fab fa-instagram  green-icon"></i></a>
+
+
+            </section>
+          </div>
+
+
+          <div class="text-center p-3 green-icon" style="background-color: rgba(0, 0, 0, 0.05);">
             © 2024 Copyright: <span class="text-bold"> Voki i Peki </span>
           </div>
         </footer>

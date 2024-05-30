@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/16330d7ae1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../Style/style.css">
+    <script src="../../Script/universalFoodScriptEnglish.js"></script>
+    <script src="../../Script/universalFoodScript.js"></script>
+    <script src="GlavnaJelaScriptEnglish.js"></script>
+    <script src="GlavnaJelaScript.js"></script>
+    <script src="../../Script/universalScript.js"></script>
+    <title>Main Dishes</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" name="header">
+            <div class="col-sm-12">
+              <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                      <img class="img-fluid" src="../../../Slike/ramenLogo.png" width="30" height="30" alt="">
+                    </a>
+                  </div>
+                  <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                      <li><a href="../../Pocetna/PocetnaEnglish.html">Home</a></li>
+                      <li class="dropdown">
+                          <a class="dropdown-toggle " data-toggle="dropdown" href="#">Galerie <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="../../Galerija/GalerijaEnglish.html">Photos</a></li>
+                            <li><a href="../../Galerija/GalerijaVideoEnglish.html">Videos</a></li>
+                          </ul>
+                      </li>
+                      <li class="dropdown active">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="../Predjela/PredjelaEnglish.html">Starters</a></li>
+                          <li><a href="../Glavna Jela/GlavnaJelaEnglish.html">Main dishes</a></li>
+                          <li><a href="../Dezerti/DezertiEnglish.html">Deserts</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="../../Moj Nalog/MojNalogEnglish.html">My Profile</a></li>
+                      <li><a href="../../O Nama/ONamaEnglish.html">About Us</a></li>
+                      <li><a href="../../Tocak Srece/TocakSreceEnglish.html">Wheel of luck</a></li>
+                      <li><a href="../../Ocene/OceneEnglish.html">Reviews</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="../../Jelovnik/Glavna Jela/GlavnaJela.html"><img src="../../../Slike/srb.jpg" alt="Serbian Flag"
+                            width="30" height="20"></a></li>
+                      <li><a href="../../Jelovnik/Glavna Jela/GlavnaJelaEnglish.html"><img src="../../../Slike/uk.jpg"
+                            alt="British Flag" width="30" height="20"></a></li>
+                      <li><a href="../../SignUp/SignUpEnglish.html"><span class="glyphicon glyphicon-user"></span>&ThinSpace; Sign
+                          up</a></li>
+                      <li><a href="../../LogIn/LogInEnglish.html"><span class="glyphicon glyphicon-log-in"></span>&ThinSpace;
+                          Login</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        <div class="row" name="body">
+            <div class="col-sm-12">
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1 class="text-center text-bold">Main Dishes</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="border-for-food">
+                            Sort by:
+                            Name: <input class="form-check-input" type="radio" name="radioSort" id="radioNameSort">
+                            Price: <input class="form-check-input" type="radio" name="radioSort" id="radioPriceSort">
+                            <button id="sortButton" class="dark-text">Sort</button>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+
+                <div id="dishes">
+
+                    <div class="row">
+                        <div class="col-sm-12 center-items">
+                            <div class="border-for-food">
+                                <h2 class="food-header text-center text-bold">Spicy-Sour Chicken</h2>
+                                <p class="text-justified">
+                                    Spicy-Sour Chicken is a delicious dish that combines juicy chicken pieces with a
+                                    tangy and spicy sauce. This dish is the perfect balance of sourness and spiciness,
+                                    prepared to delight your taste buds. Marinated chicken is cooked to perfection, then
+                                    topped with a spicy sauce that adds richness to the flavor. Served with your choice
+                                    of side, this chicken will satisfy even the most discerning guests with its
+                                    exceptionally tasty and aromatic bites.
+                                    Price for large portion: 1900 din, price for small portion: 1500 din
+                                </p>
+                                <img class="img-fluid img-thumbnail food-picture"
+                                    src="../../../Slike/GlavnoJelo1-KiseloLjutaPiletina.jpeg" alt="">
+                                <br>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <input type="range" class=" range-food" id="grade1" min="0" max="4">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <button id="submitGrade1" class="dark-text">Rate</button>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        Small Portion: <input class="form-check-input" type="radio"
+                                            name="flexRadioDefault" id="radioLittlePortion1">
+                                        Large Portion: <input class="form-check-input" type="radio"
+                                            name="flexRadioDefault" id="radioBigPortion1">
+                                        <input id="number1" type="number" step="1" max="10" value="1" name="quantity"
+                                            class="quantity-field border-0 text-center w-25 dark-text">
+                                        <button id="addToBag1">
+                                            <img class="img-fluid img-thumbnail" src="../../../Slike/shopping-cart.jpg"
+                                                width="30" height="30" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12 center-items">
+                            <div class="border-for-food">
+                                <h2 class="food-header text-center text-bold">Traditional Noodles with Vegetables</h2>
+                                <p class="text-justified">
+                                    Traditional Noodles with Vegetables is a tasty dish that combines soft noodles with
+                                    colorful vegetables, seasoned with aromatic sauce. This dish is rich in flavors and
+                                    textures, prepared with care to ensure every bite is perfect. Soft noodles are
+                                    combined with chopped vegetables and topped with a delicious sauce that adds depth
+                                    to the flavor. Served as a main course, these traditional noodles will delight you
+                                    with their freshness and full flavor.
+                                    Price for large portion: 2000 din, price for small portion: 1600 din
+                                </p>
+                                <img class="img-fluid img-thumbnail food-picture"
+                                    src="../../../Slike/GlavnoJelo2-TradicionalneNudleSaPovrcem.jpg" alt="">
+                                <br>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <input type="range" class=" range-food" id="grade2" min="0" max="4">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <button id="submitGrade2" class="dark-text">Rate</button>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        Small Portion: <input class="form-check-input" type="radio"
+                                            name="flexRadioDefault" id="radioLittlePortion2">
+                                        Large Portion: <input class="form-check-input" type="radio"
+                                            name="flexRadioDefault" id="radioBigPortion2">
+                                        <input id="number2" type="number" step="1" max="10" value="1" name="quantity"
+                                            class="quantity-field border-0 text-center w-25 dark-text">
+                                        <button id="addToBag2">
+                                            <img class="img-fluid img-thumbnail" src="../../../Slike/shopping-cart.jpg"
+                                                width="30" height="30" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-sm-12 center-items">
+                            <div class="border-for-food">
+                                <h2 class="food-header text-center text-bold">Chinese Salad</h2>
+                                <p class="text-justified">
+                                    Chinese Salad is a refreshing dish that combines crispy vegetables with a delicious
+                                    soy sauce and sesame dressing. This salad is the perfect combination of crispiness
+                                    and juiciness, prepared to satisfy your taste buds. Chopped vegetables are combined
+                                    with crispy fried sesame seeds and dressed with a refreshing soy sauce dressing.
+                                    Served as a light meal or side dish, this Chinese salad will win you over with its
+                                    unique flavor and textures.
+                                    Price for large portion: 2300 din, price for small portion: 1900 din
+                                </p>
+                                <img class="img-fluid img-thumbnail food-picture"
+                                    src="../../../Slike/GlavnoJelo3-KineskaSalata.jpg" alt="">
+                                <br>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <input type="range" class=" range-food" id="grade3" min="0" max="4">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <button id="submitGrade3" class="dark-text">Rate</button>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        Small Portion: <input class="form-check-input" type="radio"
+                                            name="flexRadioDefault" id="radioLittlePortion3">
+                                        Large Portion: <input class="form-check-input" type="radio"
+                                            name="flexRadioDefault" id="radioBigPortion3">
+                                        <input id="number3" type="number" step="1" max="10" value="1" name="quantity"
+                                            class="quantity-field border-0 text-center w-25 dark-text">
+                                        <button id="addToBag3">
+                                            <img class="img-fluid img-thumbnail" src="../../../Slike/shopping-cart.jpg"
+                                                width="30" height="30" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="row" name="footer">
+            <div class="col-sm-12">
+              <!-- bootstrap 4 footer i awesome font ikonice uvezene preko cdn-->
+              <footer class="text-center bg-body-tertiary">
+                <div class="container pt-4">
+                  <section class="mb-4">
+                    <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1 white-bg" href="#!"
+                      role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f green-icon"></i></a>
+      
+                    <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                      data-mdb-ripple-color="dark"><i class="fab fa-twitter  green-icon"></i></a>
+      
+                    <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                      data-mdb-ripple-color="dark"><i class="fab fa-google  green-icon"></i></a>
+      
+                    <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                      data-mdb-ripple-color="dark"><i class="fab fa-instagram  green-icon"></i></a>
+      
+      
+                  </section>
+                </div>
+      
+      
+                <div class="text-center p-3 green-icon" style="background-color: rgba(0, 0, 0, 0.05);">
+                  © 2024 Copyright: <span class="text-bold"> Voki i Peki </span>
+                </div>
+              </footer>
+            </div>
+          </div>
+    </div>
+</body>
+
+</html>

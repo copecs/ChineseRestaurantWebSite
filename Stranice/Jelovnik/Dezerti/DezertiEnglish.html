@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/16330d7ae1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../Style/style.css">
+    <script src="../../Script/universalFoodScriptEnglish.js"></script>
+    <script src="../../Script/universalFoodScript.js"></script>
+    <script src="DezertiScriptEnglish.js"></script>
+    <script src="DezertiScript.js"></script>
+    <script src="../../Script/universalScript.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  <div class="container-fluid">
+
+    <div class="row" name="header">
+        <div class="col-sm-12">
+          <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                  <img class="img-fluid" src="../../../Slike/ramenLogo.png" width="30" height="30" alt="">
+                </a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li><a href="../../Pocetna/PocetnaEnglish.html">Home</a></li>
+                  <li class="dropdown">
+                      <a class="dropdown-toggle " data-toggle="dropdown" href="#">Galerie <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="../../Galerija/GalerijaEnglish.html">Photos</a></li>
+                        <li><a href="../../Galerija/GalerijaVideoEnglish.html">Videos</a></li>
+                      </ul>
+                  </li>
+                  <li class="dropdown active">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="../Predjela/PredjelaEnglish.html">Starters</a></li>
+                      <li><a href="../Glavna Jela/GlavnaJelaEnglish.html">Main dishes</a></li>
+                      <li><a href="../Dezerti/DezertiEnglish.html">Deserts</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../../Moj Nalog/MojNalogEnglish.html">My Profile</a></li>
+                  <li><a href="../../O Nama/ONamaEnglish.html">About Us</a></li>
+                  <li><a href="../../Tocak Srece/TocakSreceEnglish.html">Wheel of luck</a></li>
+                  <li><a href="../../Ocene/OceneEnglish.html">Reviews</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="../../Jelovnik/Dezerti/Dezerti.html"><img src="../../../Slike/srb.jpg" alt="Serbian Flag"
+                        width="30" height="20"></a></li>
+                  <li><a href="../../Jelovnik/Dezerti/DezertiEnglish.html"><img src="../../../Slike/uk.jpg"
+                        alt="British Flag" width="30" height="20"></a></li>
+                  <li><a href="../../SignUp/SignUpEnglish.html"><span class="glyphicon glyphicon-user"></span>&ThinSpace; Sign
+                      up</a></li>
+                  <li><a href="../../LogIn/LogInEnglish.html"><span class="glyphicon glyphicon-log-in"></span>&ThinSpace;
+                      Login</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+    <div class="row" name="body">
+      <div class="col-sm-12">
+
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 class="text-center text-bold">Deserts</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="border-for-food">
+              Sort by:
+              Name: <input class="form-check-input" type="radio" name="radioSort" id="radioNameSort">
+              Price: <input class="form-check-input" type="radio" name="radioSort" id="radioPriceSort">
+              <button id="sortButton" class="dark-text">Sort</button>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+
+        <div id="dishes">
+
+        <div class="row">
+          <div class="col-sm-12 center-items">
+            <div class="border-for-food">
+              <h2 class="food-header text-center text-bold">Fruit Dumplings</h2>
+              <p class="text-justified">
+                Fruit dumplings are a traditional dish consisting of soft dumplings filled with various fruits such as plums, strawberries, or cherries. These juicy dumplings are sprinkled with sugar and served warm, making a perfect combination of sweet fruit and soft dough. This dish is a favorite choice for dessert or a light meal during warm summer days.
+                Price for a large portion: 400 din, price for a small portion: 200 din
+              </p>
+              <img class="img-fluid img-thumbnail food-picture" src="../../../Slike/Dezert1-KnedleSaVocem.jpg" alt="">
+              <br>
+              <br>
+              <div class="row">
+                <div class="col-sm-3">
+                  <input type="range" class=" range-food" id="grade1" min="0" max="4">
+                </div>
+                <div class="col-sm-3">
+                  <button id="submitGrade1" class="dark-text">Rate</button>
+                </div>
+                <div class="col-sm-6">
+                  Small portion: <input class="form-check-input" type="radio" name="flexRadioDefault"
+                  id="radioLittlePortion1">
+                Large portion: <input class="form-check-input" type="radio" name="flexRadioDefault"
+                  id="radioBigPortion1">
+                  <input id="number1" type="number" step="1" max="10" value="1" name="quantity" class="quantity-field border-0 text-center w-25 dark-text">
+                  <button id="addToBag1">
+                    <img class="img-fluid img-thumbnail" src="../../../Slike/shopping-cart.jpg" width="30" height="30" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="row">
+          <div class="col-sm-12 center-items">
+            <div class="border-for-food">
+              <h2 class="food-header text-center text-bold">Sweet and Spicy Chicken</h2>
+              <p class="text-justified">
+                Sweet and spicy chicken is a delicious dish that combines sweet and spicy flavors perfectly. Juicy pieces of chicken are caramelized in a sweet and spicy sauce, enriched with aromatic spices like ginger, garlic, and red pepper. This dish is often served with rice or slices of fresh vegetables, providing a rich and balanced meal.
+                Price for a large portion: 600 din, price for a small portion: 400 din
+              </p>
+              <img class="img-fluid img-thumbnail food-picture" src="../../../Slike/Dezert2-SlatkoLjutaPiletina.jpg" alt="">
+              <br>
+              <br>
+              <div class="row">
+                <div class="col-sm-3">
+                  <input type="range" class=" range-food" id="grade2" min="0" max="4">
+                </div>
+                <div class="col-sm-3">
+                  <button id="submitGrade2" class="dark-text">Rate</button>
+                </div>
+                <div class="col-sm-6">
+                  Small portion: <input class="form-check-input" type="radio" name="flexRadioDefault"
+                  id="radioLittlePortion2">
+                Large portion: <input class="form-check-input" type="radio" name="flexRadioDefault"
+                  id="radioBigPortion2">
+                  <input id="number2" type="number" step="1" max="10" value="1" name="quantity" class="quantity-field border-0 text-center w-25 dark-text">
+                  <button id="addToBag2">
+                    <img class="img-fluid img-thumbnail" src="../../../Slike/shopping-cart.jpg" width="30" height="30" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="row">
+          <div class="col-sm-12 center-items">
+            <div class="border-for-food">
+              <h2 class="food-header text-center text-bold">Moon Cake</h2>
+              <p class="text-justified">
+                Moon cake is a fantastic treat that will enchant your taste buds. This cake consists of a tender layer of sponge cake topped with creamy chocolate glaze, decorated with moon-shaped sugar figures. Every bite of this cake offers an irresistible combination of chocolate and vanilla, making it a perfect choice for all dessert lovers.
+                Price for a large portion: 200 din, price for a small portion: 100 din
+              </p>
+              <img class="img-fluid img-thumbnail food-picture" src="../../../Slike/Dezert3-MesecevKolac.jpg" alt="">
+              <br>
+              <br>
+              <div class="row">
+                <div class="col-sm-3">
+                  <input type="range" class=" range-food" id="grade3" min="0" max="4">
+                </div>
+                <div class="col-sm-3">
+                  <button id="submitGrade3" class="dark-text">Rate</button>
+                </div>
+                <div class="col-sm-6">
+                  Small portion: <input class="form-check-input" type="radio" name="flexRadioDefault"
+                  id="radioLittlePortion3">
+                Large portion: <input class="form-check-input" type="radio" name="flexRadioDefault"
+                  id="radioBigPortion3">
+                  <input id="number3" type="number" step="1" max="10" value="1" name="quantity" class="quantity-field border-0 text-center w-25 dark-text">
+                  <button id="addToBag3">
+                    <img class="img-fluid img-thumbnail" src="../../../Slike/shopping-cart.jpg" width="30" height="30" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="row" name="footer">
+        <div class="col-sm-12">
+          <!-- bootstrap 4 footer i awesome font ikonice uvezene preko cdn-->
+          <footer class="text-center bg-body-tertiary">
+            <div class="container pt-4">
+              <section class="mb-4">
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1 white-bg" href="#!"
+                  role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f green-icon"></i></a>
+  
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                  data-mdb-ripple-color="dark"><i class="fab fa-twitter  green-icon"></i></a>
+  
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                  data-mdb-ripple-color="dark"><i class="fab fa-google  green-icon"></i></a>
+  
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                  data-mdb-ripple-color="dark"><i class="fab fa-instagram  green-icon"></i></a>
+  
+  
+              </section>
+            </div>
+  
+  
+            <div class="text-center p-3 green-icon" style="background-color: rgba(0, 0, 0, 0.05);">
+              © 2024 Copyright: <span class="text-bold"> Voki i Peki </span>
+            </div>
+          </footer>
+        </div>
+      </div>
+  </div>
+</body>
+</html>

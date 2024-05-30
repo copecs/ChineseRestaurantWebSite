@@ -1,0 +1,1 @@
+let message = "The given user doesn't exist!";
